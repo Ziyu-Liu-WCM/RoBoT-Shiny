@@ -9,7 +9,6 @@
 
 library(shiny)
 library(DT)
-library(shinyjs)
 
 source("fn_RoBoT.R") # Assuming your main_RoBoT.R contains the RoBoT_MCMC function and necessary setup
 

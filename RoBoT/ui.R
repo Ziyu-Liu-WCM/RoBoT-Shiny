@@ -9,7 +9,6 @@
 
 library(shiny)
 library(DT)
-library(shinyjs)
 
 
 # Define UI for application
