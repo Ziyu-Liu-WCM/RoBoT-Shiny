@@ -16,3 +16,9 @@ The RoBoT shiny app needs the "DT" package. Please see below for installing in R
 ```
 install.packages('DT')
 ```
+
+### Run RoBoT-shiny
+```
+library(shiny)
+runGitHub("RoBoT-shiny", "Ziyu-Liu-WCM")
+```
