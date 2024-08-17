@@ -2,7 +2,18 @@
 library(truncdist)
 library(gmp)
 
-dyn.load("fn_RoBoT_MCMC.dll")
+os <- Sys.info()["sysname"]
+
+if (os == "Windows") {
+  dyn.load("fn_RoBoT_MCMC.dll")
+} else if (os == "Darwin") {
+  dyn.load("fn_RoBoT_MCMC.so")
+} else {
+  print("Operating system beyond Windows and macOS is not supported.")
+}
+
+
+
 
 
 ## Some Setup
